@@ -1,0 +1,67 @@
+/* @font-face {
+    font-family: "Rela1", Arial, sans-serif;
+    src: url(./font/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Rela2", Arial, sans-serif;
+    src: url(./font/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Beba", Arial, sans-serif;
+    src: url(./font/BebasNeue-Regular.ttf);
+} */
+
+/* h1 {
+    font-family: Beba, Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Rela1", Arial, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+} */
+
+.banner-c {
+    /* width: 100%; */
+    overflow: hidden; /* Oculta el contenido que sobresale del contenedor */
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* padding-right: 10px; */
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.banner img {
+    /* width: 100%; */
+    /* display: block; */
+    transition: transform 2s ease-in-out; /* Efecto de transición suave */
+    border-radius: 20px;
+    margin: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

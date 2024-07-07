@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rela1", Arial, sans-serif;
+    /* box-sizing: border-box; */
+    /* background-color: rgba(0, 0, 0, 0.639); */
+    /* color: white; */
+    /* background-image: url(./images/f2.jpg); */
+}
+
+nav {
+    height: 80px;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000a3;
+    backdrop-filter: blur(10px);
+    margin-top: 74px;
+    border: 3px solid rgb(192, 192, 192);
+    background-position: left;
+    height: 100%;
+    border-top: 6px solid #6D38E0;
+    border-bottom: 6px solid #6D38E0;
+}
+
+a {
+    padding: 5px;
+    padding: 5px 18px 5px 18px
+}
+#logo {
+    height: 60px
+}
+
+#botones {
+    font-size: 25px;
+}
+
+#setion1Index{
+    margin-left: 10px;
+}
+
+#setion2Index{
+    margin-left: 10px;
+}
+
+
+/* main {
+    margin-left: 20px;
+} */
+
+/* :hover {
+    background-color: #000000a3;
+    background: linear-gradient(313deg, #0eb132, #000000a3);
+} */
+
+a[href="#"] {
+    /* background-color: #000000a3; */
+    /* background: linear-gradient(313deg, #000000a3, #000000a3); */
+    border: 3px solid #D2CCFF;
+}
+
+#tituloMovies {
+    height: 80px;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #d2ccff;
+    backdrop-filter: blur(10px);
+    margin-top: 74px;
+    border: 3px solid rgb(192, 192, 192);
+    /* background-position: left; */
+    border-top: 6px solid #6D38E0;
+}
+
+p {
+margin: 5px;
+}
+
+h1 {
+    text-align-last: center;
+}
+
+/* h1Index1 {
+ 
+} */
+
+
+
+
+/* 
+h3 {
+    color: black;
+} */
+
+#videoPlayer {
+    width: 540px;
+    height: 300px;
+}
+
+#cintaCall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+footer {
+    height: 80px;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #000000a3;
+    backdrop-filter: blur(10px);
+    margin-top: 74px;
+    border: 3px solid rgb(192, 192, 192);
+    background-position: left;
+    border-top: 6px solid #6D38E0;
+}
+
+
+#foot {
+    color: white;
+    justify-content: center;
+}
+
+
+.slider-container {
+    overflow: hidden;
+    width: 500%; /* Ancho deseado para tu slider */
+    margin-left: 15px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 3s ease; /* Transición suave al cambiar de slide */
+}
+
+.slide {
+    flex: 0 0 auto; /* Evita que los slides se redimensionen */
+    margin-right: 20px; /* Espacio entre slides */
+}
+
+.slide img {
+    width: 400px; /* Ancho de las imágenes de las carátulas */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin: 10px;
+}
+
+h4 {
+font-weight: bold; font-size: 20px;
+margin: 5px;
+}
+
+p {
+    justify-content: left;
+}
+
+#caratula {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
