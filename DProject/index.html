@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DOM</title>
+</head>
+<body>
+    <header class="headeFoote">
+        <div>
+            <h2>Ejercicio de DOM</h2>
+        </div>
+        <div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class=" flex-wrap">
+        <div id="card" >
+            <h1 class="font-bold text-center text-4xl my-7" id="ch1">Frutas</h1>
+        </div>
+        <div class="w-fit gap-4" id="contenedor">
+        </div>
+        <div id="listaFrutaDulce">
+            <h1 class="font-bold text-center text-2xl my-7" >Frutas dulces</h1>
+            <ul id="lista">
+            </ul>
+        </div>
+    </main>
+    <footer class="headeFoote" id="footerBottom">
+        <p>MindHub ©</p>
+    </footer>
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

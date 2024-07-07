@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: rgb(197, 193, 193);
+    min-height: 4rem;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 8%;
+}
+
+main {
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+div#contenedor {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    width: 400px;
+    height: 480px;
+    border: solid #000000 2px;
+    border-radius: 10px;
+    margin: 3rem 0;
+    margin-left: 3%;
+}
+
+div.card img {
+    width: 90%;
+    height: 75%;
+}
+
+ul#lista {
+    list-style: circle;
+}
+
+#listaFrutaDulce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footerBottom {
+    display: flex;
+    justify-content: center
+}
