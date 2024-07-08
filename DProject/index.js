@@ -27,18 +27,18 @@ function crearLista(array) {
         let nuevaImagen = document.createElement('img');
         let nuevoProducto = document.createElement('h2');
         let nuevaDesc = document.createElement('p');
-  
+
         nuevaImagen.src = array[i].foto;
         nuevoProducto.innerHTML = `<h2 class="font-bold text-2xl">${array[i].nombre}</h2>`;
         nuevaDesc.innerHTML = `<p>${array[i].descripcion}</p>`;
-        
+
         let cardDiv = document.createElement('div');
         cardDiv.className = 'card';
         cardDiv.append(nuevaImagen);
         cardDiv.append(nuevoProducto);
         cardDiv.append(nuevaDesc);
         contenedor.append(cardDiv);
-        
+
     }
 }
 
@@ -55,14 +55,14 @@ function crearLista(array) {
 
 crearLista(frutas)
 
-function frutasDulce (listaDulce) {
+function frutasDulce(listaDulce) {
     for (let i = 0; i < listaDulce.length; i++) {
         if (listaDulce[i].esDulce === true) {
             let itemLista = document.createElement('li')
             itemLista.innerHTML = `${listaDulce[i].nombre}`
             lista.append(itemLista)
         }
-    }   
+    }
 }
 
 frutasDulce(frutas)
