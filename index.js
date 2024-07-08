@@ -1,38 +1,36 @@
 
 
-let slider = document.querySelector('.slider');
-let slides = document.querySelectorAll('.slide');
+let imgPelicula = document.getElementById(`imgPelicula`)
+let titlePelicula = document.getElementById(`titlePelicula`)
+let taglinePelicula = document.getElementById(`taglinePelicula`)
+let descriptionPelicula = document.getElementById(`descriptionPelicula`)
 
-let slideWidth = slides[0].offsetWidth; // Ancho de cada slide
-let currentSlide = 0;
-let slideCount = slides.length;
+function crearLista(array) {
+    for (let i = 0; i < array.length; i++) {
+        let newimg = document.createElement('img')
+        let newTitle = document.createElement('h4')
+        let newTagline = document.createElement('p')
+        let newDescription = document.createElement('p')
 
-function nextSlide() {
-    if (currentSlide < slideCount - 1) {
-        currentSlide++;
-    } else {
-        currentSlide = 0;
+        newimg.src = array[i].image
+        newTitle.innerHTML = array[i].title
+        newTagline.innerHTML = array[i].tagline
+        newDescription.innerHTML = array[i].overview
+
+
+        let cardDiv = document.createElement('div')
+        cardDiv.className = 'card'
+        cardDiv.appendChild(newimg)
+        cardDiv.appendChild(newTitle)
+        newTitle.style = "font-weight: bold; font-size: 22px; margin: 5px;"
+        cardDiv.appendChild(newTagline)
+        newTagline.style = "font-weight: bold; font-size: 18px; margin: 5px;"
+        cardDiv.appendChild(newDescription)
+
+        // document.body.appendChild(cardDiv)
+        // document.section.appendChild(cardDiv)
     }
-    slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
 
-setInterval(nextSlide, 3000); // Cambia de slide cada 3 segundos (ajusta el intervalo según tus necesidades)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+crearLista(peliculas)
 

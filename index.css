@@ -128,14 +128,15 @@ footer {
 
 
 .slider-container {
-    overflow: hidden;
-    width: 500%; /* Ancho deseado para tu slider */
+    /* overflow: hidden; */
+    width: 1000%; /* Ancho deseado para tu slider */
     margin-left: 15px;
 }
 
 .slider {
     display: flex;
     transition: transform 3s ease; /* Transición suave al cambiar de slide */
+    
 }
 
 .slide {
@@ -145,7 +146,7 @@ footer {
 
 .slide img {
     width: 400px; /* Ancho de las imágenes de las carátulas */
-    height: auto; /* Altura automática para mantener la proporción */
+    height: 300px; /* Altura automática para mantener la proporción */
     margin: 10px;
 }
 
@@ -162,8 +163,9 @@ p {
     display: flex;
     flex-direction: column;
     margin: 10px;
-    width: 300px;
+    width: 400px;
     border: 2px solid black;
     border-radius: 15px;
+    height: auto
 }
 
