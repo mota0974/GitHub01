@@ -35,6 +35,24 @@ export function filtrarPeliculaGenero () {
 }
 
 
+export function generosUnico () {
+    pelicula.forEach( peli => {
+        totalGenero.push(...peli.genres)
+    })    
+}
+
+
+export function generosMenu () {
+    generosUnicos.sort().forEach(genero => {
+        let Creaelemento = document.createElement('option')
+        Creaelemento.value = genero
+        Creaelemento.textContent = genero
+        selectGenero.appendChild(Creaelemento)
+    })
+}
+
+
+
 export function busquedaPeliculaGeneroYtitulo () {
     let peliculasFiltradas = pelicula
     const busqueda = inputBusqueda.value.toLowerCase()

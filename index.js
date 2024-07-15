@@ -65,8 +65,8 @@ selectGenero.addEventListener('change', filtrarPeliculaGenero)
 
 function busquedaPeliculaGeneroYtitulo() {
     let peliculasFiltradas = pelicula
-    const busqueda = inputBusqueda.value.toLowerCase()
-    const generoSeleccionado = selectGenero.value
+    let busqueda = inputBusqueda.value.toLowerCase()
+    let generoSeleccionado = selectGenero.value
     if (generoSeleccionado !== 'Todas') {
         peliculasFiltradas = peliculasFiltradas.filter(p =>
             p.genres.includes(generoSeleccionado))
