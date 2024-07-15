@@ -18,9 +18,12 @@
 <body>
 
     <nav>
-        <div>
-            <img id="logo" src="../images/Moviestack_logotipo1.png" alt="Logo">
-        </div>
+        <a href="../index.html">
+            <div id="cintaMenu" class="flex flex-row justify-center items-center m-1">
+                <img class="ml-2" src="../images/Moviestack_isotipo58x80.png" alt="">
+                <img id="logo" class="ml-4" src="../images/Moviestack_logotipo1.png" alt="Logo">
+            </div>
+        </a>
         <div id="botones">
             <a href="../index.html">HOME</a>
             <a href="#">MOVIES</a>
@@ -29,38 +32,42 @@
     </nav>
 
     <main>
-
         <section>
-            <h1 id="tituloMovies" style="font-size: 40px; justify-content: center">MOVIES</h1>
-
-            <div class="slider-container"> 
-                <div class="slider">
-                    <div id="caratula">
-                        <div id="imgPelicula" class="slide"><img id="mau" src="../carrusel/1c.jpg" alt="Película 1"></div>
-                        <h4 id="titlePelicula" style="font-weight: bold; font-size: 22px; margin: 5px;">Harry Potter y
-                            la piedra filosofal</h4>
-                        <p id="taglinePelicula" style="font-weight: bold; font-size: 18px; margin: 5px;">Deja que la
-                            magia comience.
-                        <p id="descriptionPelicula">Un joven mago descubre su destino en la legendaria escuela de
-                            Hogwarts.</p>
-                    </div>
-                </div>
+            <div>
+                <h1 id=tituloMovies>MOVIES</h1>
             </div>
-
+            <div id="busquedaMovies">
+                <label>
+                    <span>Genero: </span>
+                    <select name="Genero">
+                        <option value="Todas">Todas</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Buscar por título: </span>
+                    <input type="text" id="inputBusqueda" placeholder="Escribe aquí...">
+                </label>
+            </div>
         </section>
+
+        <div>
+            <!-- Acá muestro todas mis películas que viene del DOM id="container" -->
+            <div id="container">
+            </div>
+            <a id="anchor" href=""></a>
+            <!-- Acá muestro todas mis películas que viene del DOM id="container" -->
+        </div>
+
 
     </main>
     <footer id="foot">
         <p>MindHub - Cohort N</p>
     </footer>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
 
     <script src="../data.js"></script>
-    <script src="../script.js"></script>
-    <script src="../app.js"></script>
-    <script src="../index.js"></script>
+    <script type="module" src="../index.js"></script>
 </body>
+
 </html>

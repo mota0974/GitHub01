@@ -13,21 +13,17 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,121;1,121&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 </head>
 
 <body>
 
     <nav>
-        <div>
-            <img id="logo" src="./images/Moviestack_logotipo1.png" alt="Logo">
-        </div>
+        <a href="../index.html">
+            <div id="cintaMenu" class="flex flex-row justify-center items-center m-1">
+                <img class="ml-2" src="./images/Moviestack_isotipo58x80.png" alt="">
+                <img id="logo" class="ml-4" src="./images/Moviestack_logotipo1.png" alt="Logo">
+            </div>
+        </a>
         <div id="botones">
             <a href="#">HOME</a>
             <a href="./pages/movies.html">MOVIES</a>
@@ -36,10 +32,17 @@
     </nav>
 
     <main>
+
+
+
+
         <section id="setion1Index">
-            <div class="banner-c">
-                <img id="banner" src="./banners/1.jpg" alt="Banner 1">
-            </div>
+            <a href="./pages/movies.html">
+                <div class="banner-c">
+                    <img class="rounded-md bg-[#6D38E0] text-white px-4 py-2" style="" id="banner" src="./banners/1.jpg"
+                        alt="Banner 1">
+                </div>
+            </a>
             <h1 style="font-size: 40px; justify-content: center; margin-bottom: 40px;" id="h1Index1">Descubre y Disfruta
                 de las Mejores Películas y Series
             </h1>
@@ -48,7 +51,8 @@
                 en nuestro vasto universo de películas y series, desde los clásicos atemporales hasta los últimos éxitos
                 de taquilla. Sea cual sea tu género favorito, tenemos algo especial para ti.</h3>
             <h2 style="font-size: 30px; margin-top: 40px; margin-bottom: 20px;">Explora Nuestro Catálogo</h2>
-            <p style="font-size: 20px; margin-bottom: 30px; ">En MOVIESTACK, creemos en la diversidad y en ofrecerte opciones que se adaptan a
+            <p style="font-size: 20px; margin-bottom: 30px; ">En MOVIESTACK, creemos en la diversidad y en ofrecerte
+                opciones que se adaptan a
                 tus gustos y preferencias únicas. Nuestro catálogo incluye: Películas de Todos los Géneros: Acción,
                 drama, comedia, ciencia ficción, terror y más. Series Exclusivas: Desde dramas aclamados hasta
                 emocionantes series de suspense y fantásticas historias épicas. Documentales Inspiradores: Explora el
@@ -57,35 +61,30 @@
 
         <section id="setion2Index">
             <div id="cintaCall">
-                <video id="videoPlayer" width="540" height="400" controls>
-                    <source src="./videos/Deadpool.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
-                <div>
-                    <img src="./images/gratis.png" alt="">
-                </div>
+                <a href="./pages/movies.html">
+                    <img src="./images/gratis.png" alt="Peliculas">
+                </a>
+                <a href="./pages/favs.html">
+                    <img src="./images/favs_500x300.jpg" alt="Favoritos">
+                </a>
             </div>
-            <h1 style="font-size: 40px; justify-content: center; margin-bottom: 40px;" id="h1ndex2">Descubre, Disfruta y Comparte Tu Pasión por el Cine</h1>
-            <h2 style="font-size: 30px; margin-top: 40px; margin-bottom: 20px;">Únete a MOVIESTACK y Empieza a Explorar Hoy Mismo!!!</h2>
-            <p style="font-size: 20px; margin-bottom: 30px; ">Sabemos que el cine no es solo una forma de entretenimiento, es una pasión
+            <h1 style="font-size: 40px; justify-content: center; margin-bottom: 40px;" id="h1ndex2">Descubre, Disfruta y
+                Comparte Tu Pasión por el Cine</h1>
+            <h2 style="font-size: 30px; margin-top: 40px; margin-bottom: 20px;">Únete a MOVIESTACK y Empieza a Explorar
+                Hoy Mismo!!!</h2>
+            <p style="font-size: 20px; margin-bottom: 30px; ">Sabemos que el cine no es solo una forma de
+                entretenimiento, es una pasión
                 compartida que une a personas de todo el mundo. ¿Estás listo para sumergirte en un universo de historias
                 emocionantes, personajes inolvidables y momentos inesperados?</p>
         </section>
-
     </main>
 
     <footer id="foot">
         <p>MindHub - Cohort N</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <script src="./data.js"></script>
-    <script src="./script.js"></script>
-    <script src="./app.js"></script>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 
 </html>
